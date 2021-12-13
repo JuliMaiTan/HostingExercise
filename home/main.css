@@ -24,7 +24,7 @@ body {
 
 #product-overview h1 {
     color: #EBAC60;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Anton', sans-serif;;
     font-weight: lighter;
     font-size: 50px;
 }
@@ -34,11 +34,12 @@ h1 {
 }
 
 .main-header {
+    display: flex;
+    align-items: center;
     width: 100%;
     background: #EBAE61;
     padding: 25px 16px;
     height: 5vw;
-    
 }
 
 .main-header > div {
@@ -68,6 +69,7 @@ h1 {
 
 .main-nav__item {
     display: inline-block;
+    align-items: center;
     margin: 0 16px;
 }
 
@@ -97,21 +99,28 @@ h1 {
     border: none;
 }
 
+.plan__area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .plan{
     background: #EBAC60;
     text-align: center;
     padding: 16px;
-    margin: 3vh;
     display: inline-block;
     width: 30%;
     border-radius: 8px;
-    align-items: right;
+    margin: 35px;
+    height: 440px ;
 }
 
 .highlighted{
     background-color: #E85210;
     color: whitesmoke;
-    box-shadow: 2px 2px 2px 2px #faf3f0 ;
+    box-shadow: 2px 2px 2px 2px #d48e70 ;
+    height: 550px;
 }
 
 .recommended{
@@ -229,3 +238,53 @@ h1 {
 .main-footer__link a:active{
     color: black;
 }
+
+
+.modal {
+    position: fixed;
+    display: none;
+    z-index: 200;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal__title {
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+  
+  .modal__actions {
+    text-align: center;
+  }
+  
+  .modal__action {
+    border: 1px solid #8EB9FF;
+    background: #8EB9FF;
+    text-decoration: none;
+    color: white;
+    font: inherit;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .modal__action:hover,
+  .modal__action:active {
+    background: #1b72ff;
+    border-color: #1b72ff;
+  }
+  
+  .modal__action--negative {
+    background: #EBAE61;
+    border-color: #EBAE61;
+  }
+  
+  .modal__action--negative:hover,
+  .modal__action--negative:active {
+    background: #E85210;
+    border-color: #E85210;
+  }
